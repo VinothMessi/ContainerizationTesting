@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.pipeline.testcases.ChromeTestCases">
+        <methods>
+          <include name="beforeTestSuite"/>
+          <include name="beforeTestClasses"/>
+          <include name="after_Each_TestCase"/>
+          <include name="verifyGooglePage"/>
+          <include name="verifySeleniumPage"/>
+          <include name="before_Each_TestCase"/>
+        </methods>
+      </class> <!-- com.pipeline.testcases.ChromeTestCases -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

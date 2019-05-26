@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [RegressionSuite]" parallel="classes">
+  <test thread-count="2" name="ParalelTests(failed)" parallel="classes">
+    <classes>
+      <class name="com.pipeline.testcases.FirefoxTestCases">
+        <methods>
+          <include name="beforeTestSuite"/>
+          <include name="beforeTestClasses"/>
+          <include name="after_Each_TestCase"/>
+          <include name="verifySeleniumPage"/>
+          <include name="before_Each_TestCase"/>
+        </methods>
+      </class> <!-- com.pipeline.testcases.FirefoxTestCases -->
+      <class name="com.pipeline.testcases.ChromeTestCases">
+        <methods>
+          <include name="beforeTestSuite"/>
+          <include name="beforeTestClasses"/>
+          <include name="after_Each_TestCase"/>
+          <include name="verifyGooglePage"/>
+          <include name="verifySeleniumPage"/>
+          <include name="before_Each_TestCase"/>
+        </methods>
+      </class> <!-- com.pipeline.testcases.ChromeTestCases -->
+    </classes>
+  </test> <!-- ParalelTests(failed) -->
+</suite> <!-- Failed suite [RegressionSuite] -->
